@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c52c99dd04fd98f0f855e404841bfdd1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c52c99dd04fd98f0f855e404841bfdd1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c52c99dd04fd98f0f855e404841bfdd1 = L.map(
+                "map_c52c99dd04fd98f0f855e404841bfdd1",
+                {
+                    center: [31.5439, -84.2279],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_67b989f89df06aabc90370c5500ac76a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_67b989f89df06aabc90370c5500ac76a.addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+            var circle_marker_d59cf78345d4e3c5ec460f5e1c5b2ffa = L.circleMarker(
+                [31.5717920082, -84.0916661878],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_d3d42e78f6b7ea21e34a7daa4cc3acbc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_58b973e3c81092d457a19c1b80e4f85e = $(`<div id="html_58b973e3c81092d457a19c1b80e4f85e" style="width: 100.0%; height: 100.0%;">000100,Albany - Severe Risk: Access, Health and Utilization   Population:5751</div>`)[0];
+                popup_d3d42e78f6b7ea21e34a7daa4cc3acbc.setContent(html_58b973e3c81092d457a19c1b80e4f85e);
+            
+        
+
+        circle_marker_d59cf78345d4e3c5ec460f5e1c5b2ffa.bindPopup(popup_d3d42e78f6b7ea21e34a7daa4cc3acbc)
+        ;
+
+        
+    
+    
+            var circle_marker_cf5713a3ff9d8791751cfb19e1daf834 = L.circleMarker(
+                [31.5790409704, -84.129629154],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_3029294034ae1395bc931a6a41d79117 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b6f90b4545c30055481cb42fcbf6de8f = $(`<div id="html_b6f90b4545c30055481cb42fcbf6de8f" style="width: 100.0%; height: 100.0%;">000200,Albany - Severe Risk: Access, Health and Utilization   Population:3123</div>`)[0];
+                popup_3029294034ae1395bc931a6a41d79117.setContent(html_b6f90b4545c30055481cb42fcbf6de8f);
+            
+        
+
+        circle_marker_cf5713a3ff9d8791751cfb19e1daf834.bindPopup(popup_3029294034ae1395bc931a6a41d79117)
+        ;
+
+        
+    
+    
+            var circle_marker_791c6c1e17d11ff7444b7e500bf88297 = L.circleMarker(
+                [31.614841363, -84.1973866421],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_f84289212e71813e3a4d4396b8e90df8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_53f96c5aa27ee226e77dd7d92d82298b = $(`<div id="html_53f96c5aa27ee226e77dd7d92d82298b" style="width: 100.0%; height: 100.0%;">000400,Albany - Severe Risk: Access, Health and Utilization   Population:6276</div>`)[0];
+                popup_f84289212e71813e3a4d4396b8e90df8.setContent(html_53f96c5aa27ee226e77dd7d92d82298b);
+            
+        
+
+        circle_marker_791c6c1e17d11ff7444b7e500bf88297.bindPopup(popup_f84289212e71813e3a4d4396b8e90df8)
+        ;
+
+        
+    
+    
+            var circle_marker_720afe8a216fdf1b3de3749b1838a56a = L.circleMarker(
+                [31.5986585351, -84.2282377893],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_e88771992ef27a01eab73a66c859f1c5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_094a964ea2c8af87e2f851a2869bb206 = $(`<div id="html_094a964ea2c8af87e2f851a2869bb206" style="width: 100.0%; height: 100.0%;">000501,Albany - Severe Risk: Access, Health and Utilization   Population:4798</div>`)[0];
+                popup_e88771992ef27a01eab73a66c859f1c5.setContent(html_094a964ea2c8af87e2f851a2869bb206);
+            
+        
+
+        circle_marker_720afe8a216fdf1b3de3749b1838a56a.bindPopup(popup_e88771992ef27a01eab73a66c859f1c5)
+        ;
+
+        
+    
+    
+            var circle_marker_c2050d83a6d3a853a5bc3a25c6ffa46c = L.circleMarker(
+                [31.5949955544, -84.2063318482],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_e726b532d4b2b94d33e83652b473a03d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a5ddb6bc2af96e7291f956b26b0d04f2 = $(`<div id="html_a5ddb6bc2af96e7291f956b26b0d04f2" style="width: 100.0%; height: 100.0%;">000502,Albany - Severe Risk: Access, Health and Utilization   Population:4151</div>`)[0];
+                popup_e726b532d4b2b94d33e83652b473a03d.setContent(html_a5ddb6bc2af96e7291f956b26b0d04f2);
+            
+        
+
+        circle_marker_c2050d83a6d3a853a5bc3a25c6ffa46c.bindPopup(popup_e726b532d4b2b94d33e83652b473a03d)
+        ;
+
+        
+    
+    
+            var circle_marker_07686388a4c79b9902e4c9f9c08a1c5c = L.circleMarker(
+                [31.5988643853, -84.1878874284],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_4bcb1a9a5e27bb783adb04f9f901cd68 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_72bd851dbc5778f352bdb78bb770290a = $(`<div id="html_72bd851dbc5778f352bdb78bb770290a" style="width: 100.0%; height: 100.0%;">000600,Albany - Severe Risk: Access, Health and Utilization   Population:2938</div>`)[0];
+                popup_4bcb1a9a5e27bb783adb04f9f901cd68.setContent(html_72bd851dbc5778f352bdb78bb770290a);
+            
+        
+
+        circle_marker_07686388a4c79b9902e4c9f9c08a1c5c.bindPopup(popup_4bcb1a9a5e27bb783adb04f9f901cd68)
+        ;
+
+        
+    
+    
+            var circle_marker_45c6a9c940ae2fb779c819e719b03902 = L.circleMarker(
+                [31.5969740277, -84.169855158],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_e0b2ef677f530e7f78cbdc2a893db294 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1b6895e2afc64d5ace0b45c3f4c7868b = $(`<div id="html_1b6895e2afc64d5ace0b45c3f4c7868b" style="width: 100.0%; height: 100.0%;">000700,Albany - Severe Risk: Access, Health and Utilization   Population:1783</div>`)[0];
+                popup_e0b2ef677f530e7f78cbdc2a893db294.setContent(html_1b6895e2afc64d5ace0b45c3f4c7868b);
+            
+        
+
+        circle_marker_45c6a9c940ae2fb779c819e719b03902.bindPopup(popup_e0b2ef677f530e7f78cbdc2a893db294)
+        ;
+
+        
+    
+    
+            var circle_marker_9999ca00e9796b6b52c7e84052b81b3d = L.circleMarker(
+                [31.585966357, -84.1563096114],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_f3f26583895bdb70a7517aec0d8ed23d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0efda772f0f6c6b3f94de47844031d34 = $(`<div id="html_0efda772f0f6c6b3f94de47844031d34" style="width: 100.0%; height: 100.0%;">000800,Albany - Severe Risk: Access, Health and Utilization   Population:1607</div>`)[0];
+                popup_f3f26583895bdb70a7517aec0d8ed23d.setContent(html_0efda772f0f6c6b3f94de47844031d34);
+            
+        
+
+        circle_marker_9999ca00e9796b6b52c7e84052b81b3d.bindPopup(popup_f3f26583895bdb70a7517aec0d8ed23d)
+        ;
+
+        
+    
+    
+            var circle_marker_084280f3cbc0d041711dec2c89823b1b = L.circleMarker(
+                [31.5842141165, -84.1776657777],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_158ae3ff6790cfb81a50792c36690d2e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2b8acb6ec534ce411ecad69adde039aa = $(`<div id="html_2b8acb6ec534ce411ecad69adde039aa" style="width: 100.0%; height: 100.0%;">000900,Albany - Severe Risk: Access, Health and Utilization   Population:2082</div>`)[0];
+                popup_158ae3ff6790cfb81a50792c36690d2e.setContent(html_2b8acb6ec534ce411ecad69adde039aa);
+            
+        
+
+        circle_marker_084280f3cbc0d041711dec2c89823b1b.bindPopup(popup_158ae3ff6790cfb81a50792c36690d2e)
+        ;
+
+        
+    
+    
+            var circle_marker_4ab4bc0d14ea2f2b7d8eb1812d3e000d = L.circleMarker(
+                [31.5772179312, -84.2074141108],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_a07cd2d621a91657345b7934acaead18 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_46f3723200f28f755b7c0e77f36e7ae1 = $(`<div id="html_46f3723200f28f755b7c0e77f36e7ae1" style="width: 100.0%; height: 100.0%;">001000,Albany - Severe Risk: Access, Health and Utilization   Population:2106</div>`)[0];
+                popup_a07cd2d621a91657345b7934acaead18.setContent(html_46f3723200f28f755b7c0e77f36e7ae1);
+            
+        
+
+        circle_marker_4ab4bc0d14ea2f2b7d8eb1812d3e000d.bindPopup(popup_a07cd2d621a91657345b7934acaead18)
+        ;
+
+        
+    
+    
+            var circle_marker_8b6855081546f1e8d7c4072a1f064708 = L.circleMarker(
+                [31.5623633191, -84.1934936075],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_9df96227a23a13da4363d420856c245d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4af9caa1a9375618a6f894a21f8b06c3 = $(`<div id="html_4af9caa1a9375618a6f894a21f8b06c3" style="width: 100.0%; height: 100.0%;">001100,Albany - Severe Risk: Access, Health and Utilization   Population:6215</div>`)[0];
+                popup_9df96227a23a13da4363d420856c245d.setContent(html_4af9caa1a9375618a6f894a21f8b06c3);
+            
+        
+
+        circle_marker_8b6855081546f1e8d7c4072a1f064708.bindPopup(popup_9df96227a23a13da4363d420856c245d)
+        ;
+
+        
+    
+    
+            var circle_marker_8f6c2000e91a04342564769f9fb67cc4 = L.circleMarker(
+                [31.5603888541, -84.1579348598],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_732c8cf9dda18356e42b606955bda4d5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3b2a90e413c6b0a386919ceec23ea23e = $(`<div id="html_3b2a90e413c6b0a386919ceec23ea23e" style="width: 100.0%; height: 100.0%;">001403,Albany - Severe Risk: Access, Health and Utilization   Population:2953</div>`)[0];
+                popup_732c8cf9dda18356e42b606955bda4d5.setContent(html_3b2a90e413c6b0a386919ceec23ea23e);
+            
+        
+
+        circle_marker_8f6c2000e91a04342564769f9fb67cc4.bindPopup(popup_732c8cf9dda18356e42b606955bda4d5)
+        ;
+
+        
+    
+    
+            var circle_marker_b84969b9e33bf86199135026c6f143ad = L.circleMarker(
+                [31.5662059503, -84.1671847728],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_f729afd499a75c353b43c83a144764dc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_09285813d72e0e124eab620d3e30fb1e = $(`<div id="html_09285813d72e0e124eab620d3e30fb1e" style="width: 100.0%; height: 100.0%;">001500,Albany - Severe Risk: Access, Health and Utilization   Population:2896</div>`)[0];
+                popup_f729afd499a75c353b43c83a144764dc.setContent(html_09285813d72e0e124eab620d3e30fb1e);
+            
+        
+
+        circle_marker_b84969b9e33bf86199135026c6f143ad.bindPopup(popup_f729afd499a75c353b43c83a144764dc)
+        ;
+
+        
+    
+    
+            var circle_marker_4844b5525f30675a229bddd1221b75fc = L.circleMarker(
+                [31.5954098879, -84.1218958801],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_364f1e3c15fbd6d50163c697c0a1b85e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_56a82759a36215e06f1362d256118f31 = $(`<div id="html_56a82759a36215e06f1362d256118f31" style="width: 100.0%; height: 100.0%;">010302,Albany - Severe Risk: Access, Health and Utilization   Population:5627</div>`)[0];
+                popup_364f1e3c15fbd6d50163c697c0a1b85e.setContent(html_56a82759a36215e06f1362d256118f31);
+            
+        
+
+        circle_marker_4844b5525f30675a229bddd1221b75fc.bindPopup(popup_364f1e3c15fbd6d50163c697c0a1b85e)
+        ;
+
+        
+    
+    
+            var circle_marker_0f5bd22bba99d940099a281f81da06f0 = L.circleMarker(
+                [31.5690412276, -84.2555672838],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_7c46edfee93ca5e7381df9a413ffe908 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6ed3909fff3ed4955c7c1205b67002f7 = $(`<div id="html_6ed3909fff3ed4955c7c1205b67002f7" style="width: 100.0%; height: 100.0%;">010402,Albany - Severe Risk: Access, Health and Utilization   Population:2736</div>`)[0];
+                popup_7c46edfee93ca5e7381df9a413ffe908.setContent(html_6ed3909fff3ed4955c7c1205b67002f7);
+            
+        
+
+        circle_marker_0f5bd22bba99d940099a281f81da06f0.bindPopup(popup_7c46edfee93ca5e7381df9a413ffe908)
+        ;
+
+        
+    
+    
+            var circle_marker_e08eec33aa59b85cff9b19961686e228 = L.circleMarker(
+                [31.5498626304, -84.2457570121],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_cd2176cc9d054a816334d1f42b7d976b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6000ad27946081b9fda787dd88849418 = $(`<div id="html_6000ad27946081b9fda787dd88849418" style="width: 100.0%; height: 100.0%;">010403,Albany - Severe Risk: Access, Health and Utilization   Population:282</div>`)[0];
+                popup_cd2176cc9d054a816334d1f42b7d976b.setContent(html_6000ad27946081b9fda787dd88849418);
+            
+        
+
+        circle_marker_e08eec33aa59b85cff9b19961686e228.bindPopup(popup_cd2176cc9d054a816334d1f42b7d976b)
+        ;
+
+        
+    
+    
+            var circle_marker_e88de086b4cff3493690b30937ae9ce5 = L.circleMarker(
+                [31.5432757481, -84.2028019267],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_f1397448d0b2fb59c3c5547440ec5c31 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_30ef1b18d39cc862879a4d1b8dad52ae = $(`<div id="html_30ef1b18d39cc862879a4d1b8dad52ae" style="width: 100.0%; height: 100.0%;">010500,Albany - Severe Risk: Access, Health and Utilization   Population:1179</div>`)[0];
+                popup_f1397448d0b2fb59c3c5547440ec5c31.setContent(html_30ef1b18d39cc862879a4d1b8dad52ae);
+            
+        
+
+        circle_marker_e88de086b4cff3493690b30937ae9ce5.bindPopup(popup_f1397448d0b2fb59c3c5547440ec5c31)
+        ;
+
+        
+    
+    
+            var circle_marker_3709f8bfd2304f7c993922f880905f53 = L.circleMarker(
+                [31.5463182404, -84.155604899],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_f3a72fd1d9896a61077a48d6be9dd6f7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e043ef4d1118e84f257decefe0d99ccd = $(`<div id="html_e043ef4d1118e84f257decefe0d99ccd" style="width: 100.0%; height: 100.0%;">010601,Albany - Severe Risk: Access, Health and Utilization   Population:2423</div>`)[0];
+                popup_f3a72fd1d9896a61077a48d6be9dd6f7.setContent(html_e043ef4d1118e84f257decefe0d99ccd);
+            
+        
+
+        circle_marker_3709f8bfd2304f7c993922f880905f53.bindPopup(popup_f3a72fd1d9896a61077a48d6be9dd6f7)
+        ;
+
+        
+    
+    
+            var circle_marker_a97895582e5c6b99f5aa10b3e28d0088 = L.circleMarker(
+                [31.537890652, -84.1660281423],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_5d4d1f28111e5746dee1a719a6cc75ac = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5b8231fe293f58810abc1f14568940d2 = $(`<div id="html_5b8231fe293f58810abc1f14568940d2" style="width: 100.0%; height: 100.0%;">010602,Albany - Severe Risk: Access, Health and Utilization   Population:1900</div>`)[0];
+                popup_5d4d1f28111e5746dee1a719a6cc75ac.setContent(html_5b8231fe293f58810abc1f14568940d2);
+            
+        
+
+        circle_marker_a97895582e5c6b99f5aa10b3e28d0088.bindPopup(popup_5d4d1f28111e5746dee1a719a6cc75ac)
+        ;
+
+        
+    
+    
+            var circle_marker_08b1df22a61db1d8856331ec90171b18 = L.circleMarker(
+                [31.5582634203, -84.1284026744],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_42a0418ff4af5cae3f0b71fa269e076d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0e9d49b1a380ed5f9c901f2cef354bfc = $(`<div id="html_0e9d49b1a380ed5f9c901f2cef354bfc" style="width: 100.0%; height: 100.0%;">010700,Albany - Severe Risk: Access, Health and Utilization   Population:6510</div>`)[0];
+                popup_42a0418ff4af5cae3f0b71fa269e076d.setContent(html_0e9d49b1a380ed5f9c901f2cef354bfc);
+            
+        
+
+        circle_marker_08b1df22a61db1d8856331ec90171b18.bindPopup(popup_42a0418ff4af5cae3f0b71fa269e076d)
+        ;
+
+        
+    
+    
+            var circle_marker_22d34050194a5c7b6601c207a14f8b7e = L.circleMarker(
+                [31.5379985072, -84.1289510757],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_fd882f650558ea326a660abf4d6ff6b4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ef2eff6a64124641e37e777fe927e9ab = $(`<div id="html_ef2eff6a64124641e37e777fe927e9ab" style="width: 100.0%; height: 100.0%;">010900,Albany - Severe Risk: Access, Health and Utilization   Population:329</div>`)[0];
+                popup_fd882f650558ea326a660abf4d6ff6b4.setContent(html_ef2eff6a64124641e37e777fe927e9ab);
+            
+        
+
+        circle_marker_22d34050194a5c7b6601c207a14f8b7e.bindPopup(popup_fd882f650558ea326a660abf4d6ff6b4)
+        ;
+
+        
+    
+    
+            var circle_marker_441cae06f1e1ada493123b2feccbd6d6 = L.circleMarker(
+                [31.6042388813, -84.158567673],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_a6ba545f9e80bf2f49f9ff15b2f92330 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7ece8244190f648b3750f38904c572e7 = $(`<div id="html_7ece8244190f648b3750f38904c572e7" style="width: 100.0%; height: 100.0%;">011300,Albany - Severe Risk: Access, Health and Utilization   Population:1917</div>`)[0];
+                popup_a6ba545f9e80bf2f49f9ff15b2f92330.setContent(html_7ece8244190f648b3750f38904c572e7);
+            
+        
+
+        circle_marker_441cae06f1e1ada493123b2feccbd6d6.bindPopup(popup_a6ba545f9e80bf2f49f9ff15b2f92330)
+        ;
+
+        
+    
+    
+            var circle_marker_0f391223103988b269154bcfe3a6f725 = L.circleMarker(
+                [31.5766217732, -84.1633736777],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c52c99dd04fd98f0f855e404841bfdd1);
+        
+    
+        var popup_87f3cac2ce85b4aa7bbae080f644d975 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7cbed1267f06ef37e5c317ed5b97822e = $(`<div id="html_7cbed1267f06ef37e5c317ed5b97822e" style="width: 100.0%; height: 100.0%;">011400,Albany - Severe Risk: Access, Health and Utilization   Population:1557</div>`)[0];
+                popup_87f3cac2ce85b4aa7bbae080f644d975.setContent(html_7cbed1267f06ef37e5c317ed5b97822e);
+            
+        
+
+        circle_marker_0f391223103988b269154bcfe3a6f725.bindPopup(popup_87f3cac2ce85b4aa7bbae080f644d975)
+        ;
+
+        
+    
+</script>
+</html>
